@@ -11,7 +11,7 @@ import TitleComponent from "./TitleComponent";
 const About = () => {
   return (
     <div>
-      <TitleComponent />
+      <TitleComponent title="About" />
       <div>
         <Row gutter={[16, 16]}>
           <Col
