@@ -36,13 +36,14 @@ export const RootLayout: FC<RootLayoutProps> = ({ children }) => {
             </Link>
           </div>
           <main className="main-container">{children}</main>
+          <div className="mt-28 text-white"></div>
         </div>
       </div>
     </>
   );
 };
 
-const mySocialLinks = [
+export const mySocialLinks = [
   {
     icon: <FaGithub />,
     link: "https://github.com/sajidhasan007",

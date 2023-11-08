@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
-import { AddAnimation } from ".";
+import { AddAnimation } from "../components";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const HeroSection = () => {
