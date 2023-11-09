@@ -23,8 +23,8 @@ const About = () => {
             <div className="text-base">
               <AddAnimation>
                 <p className="mb-4">
-                  Hey! I'm Bob, if you haven't already gathered that by now. I'm
-                  a painter turned software engineer from Daytona, Florida. I
+                  Hey! Im Bob, if you havent already gathered that by now. Im a
+                  painter turned software engineer from Daytona, Florida. I
                   specialize in the backend, primarily Node and Rust, but love
                   building with whatever tools are right for the job.
                 </p>
@@ -38,24 +38,24 @@ const About = () => {
               </AddAnimation>
               <AddAnimation>
                 <p className="mb-4">
-                  Outside of work, I still love to paint. Any given Sunday
-                  you'll find me scribbling some happy clouds with my son ☁️ I
-                  even teach courses online if you're looking to learn!
+                  Outside of work, I still love to paint. Any given Sunday youll
+                  find me scribbling some happy clouds with my son ☁️ I even
+                  teach courses online if youre looking to learn!
                 </p>
               </AddAnimation>
 
               <AddAnimation>
                 <p className="mb-4">
-                  Outside of work, I still love to paint. Any given Sunday
-                  you'll find me scribbling some happy clouds with my son ☁️ I
-                  even teach courses online if you're looking to learn!
+                  Outside of work, I still love to paint. Any given Sunday youll
+                  find me scribbling some happy clouds with my son ☁️ I even
+                  teach courses online if youre looking to learn!
                 </p>
               </AddAnimation>
               <AddAnimation>
                 <p className="mb-4">
-                  I'm passively looking for new positions where I can merge my
-                  love for code with my love for the canvas. If you think you've
-                  got an opening that I might like, let's connect
+                  Im passively looking for new positions where I can merge my
+                  love for code with my love for the canvas. If you think youve
+                  got an opening that I might like, lets connect
                 </p>
               </AddAnimation>
 
@@ -67,6 +67,7 @@ const About = () => {
                   <div className="flex gap-2">
                     {mySocialLinks.map((item: any) => (
                       <Link
+                        key={item.link}
                         href={item.link}
                         target="_blank"
                         className="text-xl hover:text-primary"
@@ -98,7 +99,10 @@ const About = () => {
                 <AddAnimation>
                   <div className="flex gap-2 flex-wrap">
                     {workSkill.map((item: string) => (
-                      <div className="bg-[#383838] rounded-xl w-auto px-2 py-1 text-base ">
+                      <div
+                        key={item}
+                        className="bg-[#383838] rounded-xl w-auto px-2 py-1 text-base "
+                      >
                         {item}
                       </div>
                     ))}
@@ -118,7 +122,10 @@ const About = () => {
                 <AddAnimation>
                   <div className="flex gap-2 flex-wrap">
                     {workSkill.map((item: string) => (
-                      <div className="bg-[#383838] rounded-xl w-auto px-2 py-1 text-base ">
+                      <div
+                        key={item}
+                        className="bg-[#383838] rounded-xl w-auto px-2 py-1 text-base "
+                      >
                         {item}
                       </div>
                     ))}

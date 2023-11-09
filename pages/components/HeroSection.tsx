@@ -30,12 +30,12 @@ const HeroSection = () => {
           <div>
             <AddAnimation>
               <div className="text-[70px] font-black">
-                Hey, I'm Sajid Hasan<span className="dot">.</span>
+                Hey, I am Sajid Hasan<span className="dot">.</span>
               </div>
             </AddAnimation>
             <AddAnimation>
               <h2 className="text-3xl my-2">
-                I'm a{" "}
+                I am a{" "}
                 <span className="font-bold text-primary">
                   Full Stack Developer
                 </span>
@@ -44,8 +44,8 @@ const HeroSection = () => {
 
             <AddAnimation>
               <p className="text-base mb-2">
-                I've spent the last 2 years building and scaling software for
-                some pretty cool clients. Let's connect!
+                I have spent the last 2 years building and scaling software for
+                some pretty cool clients. Lets connect!
               </p>
             </AddAnimation>
             <AddAnimation>

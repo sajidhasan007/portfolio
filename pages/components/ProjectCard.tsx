@@ -29,7 +29,7 @@ const ProjectCard: FC<IProjectProps> = ({
 
       <div>
         <AddAnimation>
-          <h1 className="mt-4">{title}</h1>
+          <h1 className="mt-4 text-xl font-bold">{title}</h1>
         </AddAnimation>
         <AddAnimation>
           <div className="my-2 text-base text-primary">

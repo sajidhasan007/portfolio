@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import { About, HeroSection, Project } from "./components";
+import { About, Contact, Experience, HeroSection, Project } from "./components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,6 +9,8 @@ export default function Home() {
       <HeroSection />
       <About />
       <Project />
+      <Experience />
+      <Contact />
     </div>
   );
 }

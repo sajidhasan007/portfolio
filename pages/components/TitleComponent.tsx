@@ -5,9 +5,14 @@ import { AddAnimation } from "../components";
 type ITitleOrder = {
   title: string;
   isReverse?: boolean;
+  firstColumn?: number;
 };
 
-const TitleComponent: FC<ITitleOrder> = ({ isReverse = false, title }) => {
+const TitleComponent: FC<ITitleOrder> = ({
+  isReverse = false,
+  title,
+  firstColumn = 3,
+}) => {
   return (
     <AddAnimation>
       <Row>
@@ -15,7 +20,7 @@ const TitleComponent: FC<ITitleOrder> = ({ isReverse = false, title }) => {
           xs={{ span: 24 }}
           sm={{ span: 24 }}
           md={{ span: 24 }}
-          lg={{ span: 3 }}
+          lg={{ span: firstColumn }}
           order={isReverse ? 1 : 0}
         >
           <div className="title-style">
@@ -28,7 +33,7 @@ const TitleComponent: FC<ITitleOrder> = ({ isReverse = false, title }) => {
           xs={{ span: 24 }}
           sm={{ span: 24 }}
           md={{ span: 24 }}
-          lg={{ span: 21 }}
+          lg={{ span: 24 - firstColumn }}
           order={isReverse ? 0 : 1}
         >
           <div className={`bg-white h-[1px] w-full mt-4 ml-4`}></div>
