@@ -131,7 +131,7 @@ const About = () => {
                     <span className="text-primary">
                       <TbBrandFunimation />
                     </span>
-                    <h3 className="font-bold ">Use for Funnn</h3>
+                    <h3 className="font-bold ">Use for Fun</h3>
                   </div>
                 </AddAnimation>
                 <AddAnimation>
