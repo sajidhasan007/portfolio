@@ -6,7 +6,7 @@ import ProjectCard, { IProjectProps } from "./ProjectCard";
 
 const Project = () => {
   return (
-    <div>
+    <div className="mt-40">
       <TitleComponent title="Projects" isReverse={true} />
 
       <Row gutter={[16, 16]}>

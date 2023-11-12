@@ -6,7 +6,7 @@ import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {
   return (
-    <div>
+    <div className="mt-40">
       <TitleComponent title="Exprrience" firstColumn={5} />
 
       <Row gutter={[16, 16]}>

@@ -20,6 +20,7 @@ export const RootLayout: FC<RootLayoutProps> = ({ children }) => {
             <div className="flex gap-2">
               {mySocialLinks.map((item: any) => (
                 <Link
+                  key={item.link}
                   href={item.link}
                   target="_blank"
                   className="text-2xl hover:text-primary"
