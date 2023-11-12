@@ -8,9 +8,21 @@ const Contact = () => {
           Shoot me an email if you want to connect! You can also find me on
           Linkedin or Twitter if that is more your speed.
         </p>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-center gap-2 text-center">
           <HiOutlineMail />
-          <p className="font-bold text-xl">sajid.hasan.cit@gmail.com</p>
+          {/* <a  onClick={() => window.location = 'mailto:yourmail@domain.com'}> >
+            sajid.hasan.cit@gmail.com
+          </a> */}
+
+          <p
+            className="font-bold text-xl cursor-pointer"
+            onClick={(e) => {
+              window.location.href = "mailto:sajid.hasan.cit@gmail.com";
+            }}
+          >
+            {" "}
+            sajid.hasan.cit@gmail.com{" "}
+          </p>
         </div>
       </div>
     </div>
