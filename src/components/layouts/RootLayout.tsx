@@ -30,7 +30,7 @@ export const RootLayout: FC<RootLayoutProps> = ({ children }) => {
               ))}
             </div>
 
-            <Link href={"/CV_Sajid_Hasan.pdf"}>
+            <Link href={"/CV_Sajid_Hasan.pdf"} target="_blank">
               <div className="px-4 py-2 rounded-lg text-primary border border-primary hover:bg-primary hover:text-black ">
                 My Resume
               </div>

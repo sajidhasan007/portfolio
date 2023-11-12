@@ -1,8 +1,9 @@
-import { Col, Row } from "antd";
+import { Col, Modal, Row } from "antd";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { FC } from "react";
+import { FC, useState } from "react";
 import { AddAnimation } from "../components";
 import Image from "next/image";
+import ProjectDetails from "./ProjectDetails";
 export type IProjectProps = {
   title: string;
   techStack: string[];
@@ -19,10 +20,25 @@ const ProjectCard: FC<IProjectProps> = ({
   githubLink,
   liveLink,
 }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  console.log("my live link is = ", liveLink);
+
   return (
     <div>
       <AddAnimation>
-        <div className="bg-slate-500 w-full aspect-video p-10">
+        <div className="bg-slate-500 w-full h-72 p-6">
           <img src={imageLink} alt="Project image" />
         </div>
       </AddAnimation>
@@ -38,14 +54,32 @@ const ProjectCard: FC<IProjectProps> = ({
         </AddAnimation>
 
         <AddAnimation>
-          <p className="text-base">
-            {description}.
-            <span className="text-primary  flex gap-1 items-center">
+          <div>
+            <p className="text-base line-clamp-2">{description}</p>
+            <span
+              onClick={showModal}
+              className="text-primary flex gap-1 items-center text-base cursor-pointer"
+            >
               Learn more <MdKeyboardArrowRight />
             </span>
-          </p>
+          </div>
         </AddAnimation>
       </div>
+      <Modal
+        title={title}
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        footer={false}
+      >
+        <ProjectDetails
+          title={title}
+          description={description}
+          techStack={techStack}
+          imageLink={imageLink}
+          liveLink={liveLink}
+        />
+      </Modal>
     </div>
   );
 };

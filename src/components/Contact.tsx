@@ -2,15 +2,34 @@ import { HiOutlineMail } from "react-icons/hi";
 import { AddAnimation } from ".";
 const Contact = () => {
   return (
-    <div className="flex justify-center mt-40">
+    <div className="flex justify-center mt-40" id="contact">
       <div className="text-center">
         <AddAnimation>
-          <h1 className="text-[70px] font-black text-center">Contact</h1>
+          <h1 className="text-[70px] font-black text-center">
+            Contact<span className="dot">.</span>
+          </h1>
         </AddAnimation>
         <AddAnimation>
           <p className="text-base text-center">
-            Shoot me an email if you want to connect! You can also find me on
-            Linkedin or Twitter if that is more your speed.
+            Shoot me an email if you want to connect! You can also find me on{" "}
+            <a
+              href="https://www.linkedin.com/in/sajid007/"
+              target="_blank"
+              className="text-primary"
+            >
+              {" "}
+              Linkedin
+            </a>{" "}
+            or{" "}
+            <a
+              href="https://www.facebook.com/sajidhasan1997/"
+              target="_blank"
+              className="text-primary"
+            >
+              {" "}
+              Facebook
+            </a>{" "}
+            if that is more your speed.
           </p>
         </AddAnimation>
 

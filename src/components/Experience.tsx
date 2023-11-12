@@ -2,30 +2,30 @@ import { Col, Row } from "antd";
 import React from "react";
 import TitleComponent from "./TitleComponent";
 import { IProjectProps } from "./ProjectCard";
-import ExperienceCard from "./ExperienceCard";
+import ExperienceCard, { IExperienceCard } from "./ExperienceCard";
 
 const Experience = () => {
   return (
     <div className="mt-40">
-      <TitleComponent title="Exprrience" firstColumn={5} />
+      <TitleComponent title="Experience" firstColumn={6} secondColumn={18} />
 
       <Row gutter={[16, 16]}>
-        {projectData.map((item: IProjectProps) => (
+        {experienceData.map((item: IExperienceCard) => (
           <Col
-            key={item.title}
+            key={item.companyTitle}
             xs={{ span: 24 }}
             sm={{ span: 24 }}
             md={{ span: 24 }}
             lg={{ span: 24 }}
           >
             <ExperienceCard
-              companyTitle="MISFIT Technology Ltd."
-              designation="Jr. Software Engineer"
-              techStack={["React", "NextJs"]}
-              description="I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier."
-              location="Dhaka"
-              startYear="2022"
-              endYear="Present"
+              companyTitle={item.companyTitle}
+              designation={item.designation}
+              techStack={item.techStack}
+              description={item.description}
+              location={item.location}
+              startYear={item.startYear}
+              endYear={item.endYear}
             />
           </Col>
         ))}
@@ -53,33 +53,25 @@ const workSkill = [
   "AWS",
 ];
 
-const projectData: IProjectProps[] = [
+const experienceData: IExperienceCard[] = [
   {
-    title: "Genocide Museum",
-    techStack: ["abc", "dsw", "sde"],
+    companyTitle: "MISFIT Technology Ltd.",
+    designation: "Jr. Software Engineer",
+    techStack: [
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "React",
+      "Redux",
+      "GitHub",
+      "Jira",
+      "AWS",
+    ],
     description:
-      "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own",
-    imageLink: "/projectImage.jpg",
-  },
-  {
-    title: "Genocide Museum",
-    techStack: ["abc", "dsw", "sde"],
-    description:
-      "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own",
-    imageLink: "/projectImage.jpg",
-  },
-  {
-    title: "Genocide Museum",
-    techStack: ["abc", "dsw", "sde"],
-    description:
-      "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own",
-    imageLink: "/projectImage.jpg",
-  },
-  {
-    title: "Genocide Museum",
-    techStack: ["abc", "dsw", "sde"],
-    description:
-      "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own",
-    imageLink: "/projectImage.jpg",
+      "I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier.",
+    location: "Dhaka",
+    startYear: "2022",
+    endYear: "Present",
   },
 ];

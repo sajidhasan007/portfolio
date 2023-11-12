@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Col, Row } from "antd";
 import React from "react";
 import { BsCodeSquare } from "react-icons/bs";
@@ -11,7 +12,7 @@ import { mySocialLinks } from "./layouts/RootLayout";
 const About = () => {
   return (
     <div>
-      <TitleComponent title="About" />
+      <TitleComponent title="About" firstColumn={4} secondColumn={20} />
       <div>
         <Row gutter={[16, 16]}>
           <Col
@@ -23,39 +24,53 @@ const About = () => {
             <div className="text-base">
               <AddAnimation>
                 <p className="mb-4">
-                  Hey! Im Bob, if you havent already gathered that by now. Im a
-                  painter turned software engineer from Daytona, Florida. I
-                  specialize in the backend, primarily Node and Rust, but love
-                  building with whatever tools are right for the job.
+                  Hey! Im Sajid, As a passionate front-end developer at Misfit,
+                  I am dedicated to crafting exceptional user experiences
+                  through interactive UI designs. With a strong foundation in
+                  front-end development, I have been honing my skills in
+                  technologies such as React, and NextJs to create visually
+                  appealing and intuitive web applications.
                 </p>
               </AddAnimation>
               <AddAnimation>
                 <p className="mb-4">
-                  I currently work for Google on Google Photos. I also toss in
-                  my ¢2 with the design systems teams from time to time (once an
-                  artist, always an artist, amirite?).
+                  Currently, I am expanding my knowledge by diving into Node.js
+                  and working towards becoming a full-stack developer. By
+                  learning Node.js, I aim to strengthen my understanding of
+                  server-side development, API integration, and database
+                  management, allowing me to contribute to end-to-end web
+                  development projects.
                 </p>
               </AddAnimation>
               <AddAnimation>
                 <p className="mb-4">
-                  Outside of work, I still love to paint. Any given Sunday youll
-                  find me scribbling some happy clouds with my son ☁️ I even
-                  teach courses online if youre looking to learn!
+                  Driven by a genuine love for programming, I find joy in
+                  writing clean and maintainable code that enhances the
+                  functionality and optimizes performance. I am always eager to
+                  learn new technologies and frameworks to stay up to date with
+                  industry trends and deliver modern solutions.
                 </p>
               </AddAnimation>
 
               <AddAnimation>
                 <p className="mb-4">
-                  Outside of work, I still love to paint. Any given Sunday youll
-                  find me scribbling some happy clouds with my son ☁️ I even
-                  teach courses online if youre looking to learn!
+                  Collaboration is at the heart of my work. By effectively
+                  communicating and collaborating with cross-functional teams, I
+                  ensure seamless integration between front-end and back-end
+                  components, creating cohesive and efficient applications. I
+                  value continuous learning and actively seek opportunities to
+                  enhance my skill set. As I progress on my journey to becoming
+                  a full-stack developer, I am enthusiastic about taking on new
+                  challenges, exploring different technologies, and delivering
+                  impactful experiences.
                 </p>
               </AddAnimation>
               <AddAnimation>
                 <p className="mb-4">
-                  Im passively looking for new positions where I can merge my
-                  love for code with my love for the canvas. If you think youve
-                  got an opening that I might like, lets connect
+                  Let's connect and discuss how my strong front-end expertise
+                  and my ongoing journey toward full-stack development can
+                  contribute to building innovative and successful web
+                  applications
                 </p>
               </AddAnimation>
 
@@ -148,13 +163,15 @@ const workSkill = [
   "HTML",
   "CSS",
   "React",
+  "NextJs",
   "Redux",
+  "tailwindcss",
   "NodeJS",
   "Express",
   "Postgres",
   "MongoDB",
   "GitHub",
+  "Figma",
   "Jira",
-  "Heroku",
   "AWS",
 ];

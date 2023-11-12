@@ -12,14 +12,21 @@ export default function App({ Component, pageProps }: AppProps) {
           // fontFamily: "Poppins",
         },
 
-        // components: {
-        //   Rate: {
-        //     colorFillContent: "#E2E3E7",
-        //   },
-        //   Button: {
-        //     colorBgTextHover: "#FFFFFF",
-        //   },
-        // },
+        components: {
+          Rate: {
+            colorFillContent: "#E2E3E7",
+          },
+          Button: {
+            colorBgTextHover: "#FFFFFF",
+          },
+          Modal: {
+            contentBg: "#232323",
+            titleColor: "white",
+            headerBg: "#232323",
+            colorIcon: "white",
+            colorIconHover: "#0aff9d",
+          },
+        },
       }}
     >
       <RootLayout>

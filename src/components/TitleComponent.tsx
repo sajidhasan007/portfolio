@@ -6,12 +6,14 @@ type ITitleOrder = {
   title: string;
   isReverse?: boolean;
   firstColumn?: number;
+  secondColumn?: number;
 };
 
 const TitleComponent: FC<ITitleOrder> = ({
   isReverse = false,
   title,
   firstColumn = 3,
+  secondColumn = 21,
 }) => {
   return (
     <AddAnimation>
@@ -23,7 +25,7 @@ const TitleComponent: FC<ITitleOrder> = ({
           lg={{ span: firstColumn }}
           order={isReverse ? 1 : 0}
         >
-          <div className="title-style">
+          <div className={`title-style  ${isReverse ? "text-right" : "mr-4 "}`}>
             {title}
             <span className="dot">.</span>
           </div>
@@ -33,10 +35,10 @@ const TitleComponent: FC<ITitleOrder> = ({
           xs={{ span: 24 }}
           sm={{ span: 24 }}
           md={{ span: 24 }}
-          lg={{ span: 24 - firstColumn }}
+          lg={{ span: secondColumn }}
           order={isReverse ? 0 : 1}
         >
-          <div className={`bg-white h-[1px] w-full mt-4 ml-4`}></div>
+          <div className={`bg-white h-[1px] w-full mt-4 `}></div>
         </Col>
       </Row>
     </AddAnimation>
