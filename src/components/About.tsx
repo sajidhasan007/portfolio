@@ -3,10 +3,10 @@ import React from "react";
 import { BsCodeSquare } from "react-icons/bs";
 import { TbBrandFunimation } from "react-icons/tb";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { mySocialLinks } from "../layouts/RootLayout";
 import Link from "next/link";
 import { AddAnimation } from "../components";
 import TitleComponent from "./TitleComponent";
+import { mySocialLinks } from "./layouts/RootLayout";
 
 const About = () => {
   return (

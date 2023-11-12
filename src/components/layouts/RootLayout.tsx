@@ -10,13 +10,13 @@ export const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <>
       <div className="flex text-white ">
-        <div className="bg-black w-12 h-screen fixed z-10">
+        <div className="bg-black w-12 h-screen sticky top-0">
           {/* <div className="vertical-div hover:border border-red-500">
             hi this is me
           </div> */}
         </div>
-        <div className="w-full bg-[#232323]">
-          <div className="w-full h-12 flex justify-between items-center p-4 fixed">
+        <div className="w-full bg-[#232323] ">
+          <div className="w-full h-12 flex justify-between items-center p-2 sticky z-50 top-0 bg-[#1a1818]/80">
             <div className="flex gap-2">
               {mySocialLinks.map((item: any) => (
                 <Link
@@ -45,10 +45,6 @@ export const RootLayout: FC<RootLayoutProps> = ({ children }) => {
 };
 
 export const mySocialLinks = [
-  {
-    icon: <FaGithub />,
-    link: "https://github.com/sajidhasan007",
-  },
   {
     icon: <FaGithub />,
     link: "https://github.com/sajidhasan007",

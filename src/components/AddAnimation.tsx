@@ -47,7 +47,7 @@ export const AddAnimation = ({ children, width = "100%" }: Props) => {
           left: 0,
           right: 0,
           background: "#0aff9d",
-          //   opacity: 0.5,
+          opacity: 0.1,
           zIndex: 20,
         }}
       />
