@@ -136,7 +136,7 @@ const About = () => {
                 </AddAnimation>
                 <AddAnimation>
                   <div className="flex gap-2 flex-wrap">
-                    {workSkill.map((item: string) => (
+                    {useForFun.map((item: string) => (
                       <div
                         key={item}
                         className="bg-[#383838] rounded-xl w-auto px-2 py-1 text-base "
@@ -175,3 +175,5 @@ const workSkill = [
   "Jira",
   "AWS",
 ];
+
+const useForFun = ["Farmar Motion", "CodeSandbox", "CodePen"];

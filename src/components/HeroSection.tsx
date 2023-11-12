@@ -16,6 +16,7 @@ const HeroSection = () => {
       sliderContruls.start("visible");
     }
   }, [isInview]);
+
   return (
     <Row className="h-full" ref={ref}>
       <Col
